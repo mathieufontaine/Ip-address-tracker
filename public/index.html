@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <main>
+      <img src="./img/pattern-bg.png" class="banner" alt="banner" />
+      <div class="map" id="mapid"></div>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="56">
+          <path
+            fill-rule="evenodd"
+            d="M39.263 7.673c8.897 8.812 8.966 23.168.153 32.065l-.153.153L23 56 6.737 39.89C-2.16 31.079-2.23 16.723 6.584 7.826l.153-.152c9.007-8.922 23.52-8.922 32.526 0zM23 14.435c-5.211 0-9.436 4.185-9.436 9.347S17.79 33.128 23 33.128s9.436-4.184 9.436-9.346S28.21 14.435 23 14.435z"
+          />
+        </svg>
+      </div>
+      <div class="container">
+        <h1>IP Address Tracker</h1>
+        <div class="search-bar">
+          <input type="text" id="input" />
+          <div class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="card">
+          <div class="grid">
+            <div class="info-box">
+              <h2>IP Address</h2>
+              <div class="data ip">No Data</div>
+            </div>
+            <div class="info-box">
+              <h2>Location</h2>
+              <div class="data location">No Data</div>
+            </div>
+            <div class="info-box">
+              <h2>Timezone</h2>
+              <div class="data timezone">No Data</div>
+            </div>
+            <div class="info-box">
+              <h2>ISP</h2>
+              <div class="data isp">No Data</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../src/app.js"></script>
+</html>
