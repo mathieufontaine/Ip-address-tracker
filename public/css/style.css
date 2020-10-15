@@ -3,6 +3,9 @@
   --secondary-color: hsl(0, 0%, 59%);
 }
 
+html {
+  font-size: 14px;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -158,16 +161,15 @@ main {
     font-size: 1rem;
   }
   .card {
-    padding: 20px 0;
-    margin: 20px;
+    padding: 5px 0;
   }
   .grid {
-    display: inline;
+    grid-template-columns: repeat(2, 1fr);
   }
   .card .info-box {
     text-align: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
   }
 }
 
