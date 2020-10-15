@@ -15,7 +15,8 @@ export const injectMap = coordinates => {
     iconUrl: iconUrl
   });
 
-  const marker = L.marker([lat, lng], { icon: icon }).addTo(mymap);
+  // const marker = L.marker([lat, lng], { icon: icon }).addTo(mymap);
+  const marker = L.marker[(lat, lng)].addTo(mymap);
   marker
     .bindPopup(`<b>${ip}</b><br>latitute: ${lat}<br>longitute: ${lng}`)
     .openPopup();
