@@ -16,10 +16,8 @@ export const injectMap = coordinates => {
   });
 
   // const marker = L.marker([lat, lng], { icon: icon }).addTo(mymap);
-  const marker = new mapboxgl.Marker();
+  const marker = L.marker([lat, lng]).addTo(mymap);
   marker
-    .setLngLat([lat, lng])
-    .addTo(mymap)
     .bindPopup(`<b>${ip}</b><br>latitute: ${lat}<br>longitute: ${lng}`)
     .openPopup();
 };
