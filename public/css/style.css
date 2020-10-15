@@ -176,13 +176,15 @@ main {
 @media (max-width: 500px) {
   .card,
   .search-bar {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
+    width: 75%;
+    margin: 10px auto;
   }
   .search-bar input {
     font-size: 0.7rem;
     width: 90%;
     padding: 5px;
+  }
+  .card .info-box .data {
+    font-size: 0.8rem;
   }
 }
